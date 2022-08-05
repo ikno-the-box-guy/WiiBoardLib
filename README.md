@@ -14,6 +14,8 @@ var state = board.GetState();
 
 ## Dependencies
 This library depends on the ``SharpDX.DirectInput`` library which [is available on NuGet:](https://www.nuget.org/packages/SharpDX.DirectInput)
+
 ``dotnet add package SharpDX.DirectInput --version 4.2.0``
+
 
 This project also requires a special driver for the Wii Balance Board to correctly work on your device, [you can download the driver here](https://www.julianloehr.de/educational-work/hid-wiimote/). 
