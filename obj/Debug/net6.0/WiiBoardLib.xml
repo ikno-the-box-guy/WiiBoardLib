@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WiiBoardLib</name>
+    </assembly>
+    <members>
+        <member name="T:WiiBoardLib.WiiBoard">
+            <summary>
+            Class <c>WiiBoard</c>, requires <c>SharpDX.DirectInput</c>.
+            </summary>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.#ctor(System.Guid,System.Boolean)">
+            <summary>
+            Constructor for the WiiBoard class.
+            Requires the <c>DeviceGuid</c>. Can be retreived with help from <c>SharpDX.DirectInput</c>.
+            </summary>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.FindWiiBoard(System.Double,System.Boolean)">
+            <summary>
+            Automatically searches for a connected wiiboard and creates a WiiBoard object from it. 
+            If no wiiboard can be found within <c>timeout</c> seconds an exception will be thrown.
+            </summary>
+            <exception cref="T:System.TimeoutException">
+            Thrown when wiiboard can not be found.
+            </exception>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.Calibrate">
+            <summary>
+            Calibrates the balanceboard. The balanceboard may not be touched when being calibrated. 
+            </summary>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.GetState">
+            <summary>
+            This method returns a <c>Vector2</c> with information on where the balance point is.
+            </summary>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.GetRight(System.Single)">
+            <summary>
+            This method returns <c>true</c> when the balance point is on the right side of the board.
+            </summary>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.GetTop(System.Single)">
+            <summary>
+            This method returns <c>true</c> when the balance point is on the top of the board.
+            </summary>
+        </member>
+    </members>
+</doc>

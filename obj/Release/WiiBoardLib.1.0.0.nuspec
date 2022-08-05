@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>WiiBoardLib</id>
+    <version>1.0.0</version>
+    <authors>WiiBoardLib</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="SharpDX.DirectInput" version="4.2.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\bin\Release\net6.0\WiiBoardLib.dll" target="lib\net6.0\WiiBoardLib.dll" />
+    <file src="C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\bin\Release\net6.0\WiiBoardLib.xml" target="lib\net6.0\WiiBoardLib.xml" />
+  </files>
+</package>

@@ -1,0 +1,14 @@
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\bin\Release\net6.0\WiiBoardLib.deps.json
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\bin\Release\net6.0\WiiBoardLib.dll
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\bin\Release\net6.0\WiiBoardLib.pdb
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Release\net6.0\WiiBoardLib.csproj.AssemblyReference.cache
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Release\net6.0\WiiBoardLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Release\net6.0\WiiBoardLib.AssemblyInfoInputs.cache
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Release\net6.0\WiiBoardLib.AssemblyInfo.cs
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Release\net6.0\WiiBoardLib.csproj.CoreCompileInputs.cache
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Release\net6.0\WiiBoardLib.dll
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Release\net6.0\refint\WiiBoardLib.dll
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Release\net6.0\WiiBoardLib.pdb
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Release\net6.0\ref\WiiBoardLib.dll
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\bin\Release\net6.0\WiiBoardLib.xml
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Release\net6.0\WiiBoardLib.xml

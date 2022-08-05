@@ -1,0 +1,149 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WiiBoardLib</name>
+    </assembly>
+    <members>
+        <member name="T:WiiBoardLib.WiiBoard">
+            <summary>
+            Class <see cref="T:WiiBoardLib.WiiBoard"/>, requires <see cref="N:SharpDX.DirectInput"/>.
+            </summary>
+        </member>
+        <member name="P:WiiBoardLib.WiiBoard.Gamepad">
+            <summary>
+             The <see cref="T:SharpDX.DirectInput.Joystick"/> object assosiated with the <see cref="T:WiiBoardLib.WiiBoard"/>.
+            </summary>
+        </member>
+        <member name="P:WiiBoardLib.WiiBoard.Deadzone">
+            <summary>
+            The area in which the balancepoint is in the center. <br/>
+            It is good practice to not count inputs that are inside of the <see cref="P:WiiBoardLib.WiiBoard.Deadzone"/> to accomodate for slight innacuracies in the state readings.
+            </summary>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.#ctor(System.Guid,System.Single,System.Boolean)">
+            <summary>
+            Constructor for the <see cref="T:WiiBoardLib.WiiBoard"/> object.
+            Requires the <paramref name="deviceGuid"/> which can be retreived with the help of <see cref="N:SharpDX.DirectInput"/>.
+            </summary>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.FindWiiBoard(System.Double,System.Single,System.Boolean)">
+            <summary>
+            Automatically searches for a connected wiiboard and creates a <see cref="T:WiiBoardLib.WiiBoard"/> object from it.<br/> 
+            If no <see cref="T:WiiBoardLib.WiiBoard"/> can be found within <paramref name="timeout"/> seconds an exception will be thrown.
+            </summary>
+            <returns>
+            the <see cref="T:WiiBoardLib.WiiBoard"/> object if a connected <see cref="T:WiiBoardLib.WiiBoard"/> has been found.
+            </returns>
+            <exception cref="T:System.TimeoutException">
+            Thrown when no connected wiiboard can be found.
+            </exception>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.Calibrate">
+            <summary>
+            Calibrates the <see cref="T:WiiBoardLib.WiiBoard"/>.
+            </summary>
+            <remarks>
+            The <see cref="T:WiiBoardLib.WiiBoard"/> may not be touched when being calibrated.
+            </remarks>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.GetState">
+            <summary>
+            Gets the current state of the <see cref="T:WiiBoardLib.WiiBoard"/>, this state is the balancepoint.
+            </summary>
+            <returns>
+            a <see cref="T:System.Numerics.Vector2"/> containg the state of the <see cref="T:WiiBoardLib.WiiBoard"/>.
+            </returns>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.GetRight">
+            <summary>
+            Whether or not the balancepoint is in the right area of the <see cref="T:WiiBoardLib.WiiBoard"/> and outside of the <see cref="P:WiiBoardLib.WiiBoard.Deadzone"/>.
+            </summary>
+            <returns>
+            <see langword="true"/> if the balancepoint is at the right of the <see cref="T:WiiBoardLib.WiiBoard"/> and outside of the <see cref="P:WiiBoardLib.WiiBoard.Deadzone"/>; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.GetLeft">
+            <summary>
+            Whether or not the balancepoint is in the left area of the <see cref="T:WiiBoardLib.WiiBoard"/> and outside of the <see cref="P:WiiBoardLib.WiiBoard.Deadzone"/>.
+            </summary>
+            <returns>
+            <see langword="true"/> if the balancepoint is at the left of the <see cref="T:WiiBoardLib.WiiBoard"/> and outside of the <see cref="P:WiiBoardLib.WiiBoard.Deadzone"/>; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.GetTop">
+            <summary>
+            Whether or not the balancepoint is in the top area of the <see cref="T:WiiBoardLib.WiiBoard"/> and outside of the <see cref="P:WiiBoardLib.WiiBoard.Deadzone"/>.
+            </summary>
+            <returns>
+            <see langword="true"/> if the balancepoint is at the top of the <see cref="T:WiiBoardLib.WiiBoard"/> and outside of the <see cref="P:WiiBoardLib.WiiBoard.Deadzone"/>; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.GetBottom">
+            <summary>
+            Whether or not the balancepoint is in the bottom area of the <see cref="T:WiiBoardLib.WiiBoard"/> and outside of the <see cref="P:WiiBoardLib.WiiBoard.Deadzone"/>.
+            </summary>
+            <returns>
+            <see langword="true"/> if the balancepoint is at the bottom of the <see cref="T:WiiBoardLib.WiiBoard"/> and outside of the <see cref="P:WiiBoardLib.WiiBoard.Deadzone"/>; otherwise, false.
+            </returns>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.InDeadZone">
+            <summary>
+            Determines whether the balancepoint is inside of the <see cref="P:WiiBoardLib.WiiBoard.Deadzone"/> or not.
+            </summary>
+            <returns>
+            <see langword="true"/> if the balancepoint is inside of the <see cref="P:WiiBoardLib.WiiBoard.Deadzone"/>; otherwise, <see langword="false"/>.
+            </returns>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.GetAreas">
+            <summary>
+            Determines on which <see cref="T:WiiBoardLib.Areas"/> of the <see cref="T:WiiBoardLib.WiiBoard"/> the balancepoint lays.
+            </summary>
+            <returns>
+            the <see cref="T:WiiBoardLib.Areas"/> on which the balancepoint lays.
+            </returns>
+        </member>
+        <member name="M:WiiBoardLib.WiiBoard.InArea(WiiBoardLib.Areas)">
+            <summary>
+            Determines whether the balancepoint is inside of the given area of the <see cref="T:WiiBoardLib.WiiBoard"/> or not.
+            </summary>
+            <param name="area">
+            An area of the <see cref="T:WiiBoardLib.WiiBoard"/>.
+            </param>
+            <returns>
+            <see langword="true"/> if the balancepoint is inside of the given <paramref name="area"/>; otherwise, <see langword="false"/>.
+            </returns>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="T:WiiBoardLib.Areas">
+            <summary>
+            An <see langword="enum"/> used to tell in which area of the <see cref="T:WiiBoardLib.WiiBoard"/> the balancepoint is.<br/>
+            Should be checked against using <see cref="M:System.Enum.HasFlag(System.Enum)"/>.
+            </summary>
+        </member>
+        <member name="F:WiiBoardLib.Areas.Left">
+            <summary>
+            Left area of the board.
+            </summary>
+        </member>
+        <member name="F:WiiBoardLib.Areas.Right">
+            <summary>
+            Right area of the board.
+            </summary>
+        </member>
+        <member name="F:WiiBoardLib.Areas.Top">
+            <summary>
+            Top area of the board.
+            </summary>
+        </member>
+        <member name="F:WiiBoardLib.Areas.Bottom">
+            <summary>
+            Bottom area of the board.
+            </summary>
+        </member>
+        <member name="F:WiiBoardLib.Areas.Center">
+            <summary>
+            Center of the board, inside the deadzone.
+            </summary>
+        </member>
+    </members>
+</doc>

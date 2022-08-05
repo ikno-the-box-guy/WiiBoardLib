@@ -1,0 +1,5 @@
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Debug\netcoreapp3.0\WiiBoardLib.csproj.AssemblyReference.cache
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Debug\netcoreapp3.0\WiiBoardLib.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Debug\netcoreapp3.0\WiiBoardLib.AssemblyInfoInputs.cache
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Debug\netcoreapp3.0\WiiBoardLib.AssemblyInfo.cs
+C:\Users\erwtj\source\repos\WiiBoardLib\WiiBoardLib\obj\Debug\netcoreapp3.0\WiiBoardLib.csproj.CoreCompileInputs.cache
